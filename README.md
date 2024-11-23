@@ -1,11 +1,11 @@
 
 ### Prime Numbers Algorithm
-This is a simple program to show the prime numbers to a limit number.
+This is a simple program to show the **prime numbers** to a *limit number*.
 
 ---
 
 ### Dependences
-This is dependences to run the program:
+This is **dependences** to run the program:
 
 | Name       | Download Link                                  |
 |------------|------------------------------------------------|
@@ -15,7 +15,7 @@ This is dependences to run the program:
 ### Installing
 
 #### NodeJS
-   1. Open the terminal
+   1. Open the **terminal**
    
       - Windows
       ```
@@ -39,7 +39,7 @@ This is dependences to run the program:
       ```
 
 #### TypeScript
-   1. Open the terminal
+   1. Open the **terminal**
    
       - Windows
       ```
@@ -66,7 +66,7 @@ This is dependences to run the program:
 ---
 
 ### How to run
-1. Open the terminal
+1. Open the **terminal**
    
    - Windows
    ```
@@ -83,7 +83,7 @@ This is dependences to run the program:
    node <script-path>
    ```
  
-3. Insert the limit value and see the results...
+3. Insert the *limit value* and wait...
    ```
    =======================
    PRIME NUMBERS ALGORITHM
