@@ -4,16 +4,64 @@ This is a simple program to show the prime numbers to a limit number.
 
 ---
 
-### Requires
-###### Node.js
-```
-https://nodejs.org/en/download/package-manager
-```
+### Dependences
+This is dependences to run the program:
 
-###### TypeScript
-```
-https://www.typescriptlang.org/download/
-```
+| Name       | Download Link                                  |
+|------------|------------------------------------------------|
+| NodeJS     | https://nodejs.org/en/download/package-manager |
+| TypeScript | https://www.typescriptlang.org/download/       |
+
+### Installing
+
+#### NodeJS
+   1. Open the terminal
+   
+      - Windows
+      ```
+      Windows + R : "cmd" or "powershell"
+      ```
+   
+      - Linux
+      ```
+      Ctrl + Alt + T
+      ```
+   
+   2. Insert the following command
+
+      ```
+      cd <program-file-path>
+      ```
+
+   3. Then
+      ```
+      npm init -y
+      ```
+
+#### TypeScript
+   1. Open the terminal
+   
+      - Windows
+      ```
+      Windows + R : "cmd" or "powershell"
+      ```
+   
+      - Linux
+      ```
+      Ctrl + Alt + T
+      ```
+   
+   2. Insert the following command
+
+      ```
+      cd <program-file-path>
+      ```
+
+   3. Then
+      ```
+      npm install -g typescript
+      ```
+
 
 ---
 
@@ -30,9 +78,9 @@ https://www.typescriptlang.org/download/
    Ctrl + Alt + T
    ```
    
-2. Insert the code and run
+2. Insert the following command and run
    ```
    node <script-path>
    ```
-   
+ 
 3. Insert the limit value and see the results...
