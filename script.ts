@@ -5,7 +5,17 @@ const prompt = require('prompt-sync')();
 // Introduction message
 console.log(`======================= \nPRIME NUMBERS ALGORITHM \n=======================`);
 
-// The main function to run the code
+// The isPrime function verifies prime numbers
+const isPrime = (number : number) => {
+    if (number < 2) return false; // If number is less than 2, it is not prime
+    for (let looper: number = 2; looper <= Math.sqrt(number); looper++) { // Verify numbers until square root of number
+        if (number % looper === 0) return false; // If number is divided by loop number, it is not prime
+    }
+    return true; // If there is not divided, it is prime
+};
+
+
+// The mainFunction to run the code
 function mainFunction() {
     // Defining the variable
     const limitNumber = Number(prompt("Enter the limit number: "));
@@ -17,7 +27,7 @@ function mainFunction() {
         console.log(`====================================================== \nREADING ERROR: minimum value is 2! \n======================================================`);
         mainFunction();
         return;
-    } 
+    }
     if (Number.isInteger(limitNumber) === false) {
         // the limit value not being an integer
         console.log(`====================================== \nREADING ERROR: value must be intenger! \n======================================`);
@@ -26,20 +36,11 @@ function mainFunction() {
     };
 
     // Creating a loop to find each prime number until reaching the limit number
-    // it starts in 2 because 1 is not a prime number
-
-    //I need to change it
-    for (let number: number = 2; number <= limitNumber; number++) {
-        if (number === 2 || number === 3 || number === 5 || number === 7) {
-            // if the number is equal to two, three. five or seven. then it is a prime number
-            primeArray.push(number);
-            // The variable array length represents the position to insert the next prime number into the array
-            // every time a prime number is found, this variable will receive one more unit (1)
-        } 
-        if (number % 2 !== 0 && number % 3 !== 0 && number % 5 !== 0 && number % 7 !== 0) {
-            // if the number is not divisible by two, three, five or seven, then it is a prime number
-            primeArray.push(number);
-        }
+    // It starts in 2 because 1 is not a prime number
+    for (let looper: number = 2; looper <= limitNumber; looper++) { // It will verify until the array is full
+        if (isPrime(looper)) { // If the function isPrime return true
+            primeArray.push(looper); // the number enters in array
+        };
     };
     // Showing the table with the prime numbers
     console.log(`====================================== \nArray with the prime numbers up to ${limitNumber}: \n[${primeArray.join(', ')}] \n======================================`);
