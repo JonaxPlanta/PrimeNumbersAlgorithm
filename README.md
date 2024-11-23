@@ -84,3 +84,9 @@ This is dependences to run the program:
    ```
  
 3. Insert the limit value and see the results...
+   ```
+   =======================
+   PRIME NUMBERS ALGORITHM
+   =======================
+   Enter the limit number: <...>
+   ```
